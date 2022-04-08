@@ -55,9 +55,6 @@ body {
     left: -304px;
     border-radius: 10px;
     border: 4px solid #e0e5ea;
-
-    -moz-transition: all 500ms;
-    -webkit-transition: all 500ms;
     transition: all 500ms;
 }
 
@@ -86,8 +83,6 @@ body {
 /*Кнопки*/
 #toolsbar ul li button {
     color: #0d32a1;
-    -webkit-appearance: none;
-    -moz-appearance: none;
     appearance: none;
     border: 0;
     border-radius: 5px;
