@@ -2,7 +2,6 @@
 * {
     padding: 0;
     margin: 0;
-
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-size: 16px;
@@ -17,13 +16,12 @@ header {
     display: flex;
     justify-content: center;
     padding: 10px 0 15px;
-
     background: #6BB8FF;
     box-shadow: 0px 10px 6px rgba(66, 66, 66, 0.25);
 }
 
 body {
-    background-color: #032278;
+    background-color: #343434;
 }
 
 /*Логотип*/
@@ -82,9 +80,7 @@ body {
 
 /*Кнопки*/
 #toolsbar ul li button {
-    color: #0d32a1;
-    appearance: none;
-    border: 0;
+    border: none;
     border-radius: 5px;
     background: #4676D7;
     color: #fff;
@@ -125,27 +121,35 @@ body {
 }
 
 /*КАРТА СЕТИ*/
+
 main {
     position: absolute;
     left: 100px;
     right: 100px;
-    background-color: #9f9f9f;
-    border: 5px solid rgb(71, 71, 71);
+    background-color: #c8c8c8;
+    z-index: -1;
 }
 
+/*Поле карты сети*/
 .network-map {
     padding-top: 20px;
 }
 
+#viewport {
+    justify-content: center;
+}
+
+/*Сервер-хаб*/
 .server-pic {
     display: flex;
     align-items: center;
     margin: auto;
-    width: 70px;
+    width: 100px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
+/*Коммутатор*/
 .switch-pic {
     display: flex;
     justify-content: center;
@@ -154,6 +158,7 @@ main {
     margin-top: 50px;
 }
 
+/*Устройство*/
 .device-pic {
     display: flex;
     justify-content: center;

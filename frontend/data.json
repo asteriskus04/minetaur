@@ -1,0 +1,72 @@
+{
+    "nodes": [
+        {
+            "name": "Server"
+        },
+        {
+            "name": "Switch_1"
+        },
+        {
+            "name": "Switch_2"
+        },
+        {
+            "name": "Switch_3"
+        },
+        {
+            "name": "node_5"
+        },
+        {
+            "name": "node_6"
+        },
+        {
+            "name": "node_7"
+        },
+        {
+            "name": "node_8"
+        },
+        {
+            "name": "node_9"
+        },
+        {
+            "name": "node_10"
+        }
+    ],
+    "edges": [
+        {
+            "src": "Server",
+            "dest": "Switch_1"
+        },
+        {
+            "src": "Server",
+            "dest": "Switch_2"
+        },
+        {
+            "src": "Server",
+            "dest": "Switch_3"
+        },
+        {
+            "src": "Switch_1",
+            "dest": "node_5"
+        },
+        {
+            "src": "Switch_1",
+            "dest": "node_6"
+        },
+        {
+            "src": "Switch_1",
+            "dest": "node_7"
+        },
+        {
+            "src": "Switch_2",
+            "dest": "node_8"
+        },
+        {
+            "src": "Switch_2",
+            "dest": "node_9"
+        },
+        {
+            "src": "Switch_3",
+            "dest": "node_10"
+        }
+    ]
+}
