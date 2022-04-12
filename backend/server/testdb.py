@@ -63,9 +63,9 @@ def execute_read_query(connection, query):
     except OperationalError as e:
         print(f"The error '{e}' occurred")
 
-
-def hex_to_utf(a):
-    for i in range(len(a)):
+        """
+#def hex_to_utf(a):
+#    for i in range(len(a)):
         b = bytes.fromhex(a[i])
         a = b.decode('utf-8')
         return a
@@ -79,3 +79,4 @@ print(hex_to_utf(hex))
 # print(hex_to_utf(hex1))
 m = "005600730065006d002000700072006900760065007400200074006500730074"
 # print(hex_to_utf(m))
+"""

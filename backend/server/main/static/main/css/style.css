@@ -2,7 +2,6 @@
 * {
     padding: 0;
     margin: 0;
-
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-size: 16px;
@@ -17,14 +16,13 @@ header {
     display: flex;
     justify-content: center;
     padding: 10px 0 15px;
-
     background: #6BB8FF;
     box-shadow: 0px 10px 6px rgba(66, 66, 66, 0.25);
 }
 
 body {
-    background-image: url(/static/main/img/bg.jpg);
-    background-size: 100%;
+    background: url(/static/main/img/bg.jpg);
+    background-size: cover;
 }
 
 /*Логотип*/
@@ -56,9 +54,6 @@ body {
     left: -304px;
     border-radius: 10px;
     border: 4px solid #e0e5ea;
-
-    -moz-transition: all 500ms;
-    -webkit-transition: all 500ms;
     transition: all 500ms;
 }
 
@@ -86,11 +81,7 @@ body {
 
 /*Кнопки*/
 #toolsbar ul li button {
-    color: #0d32a1;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border: 0;
+    border: none;
     border-radius: 5px;
     background: #4676D7;
     color: #fff;
@@ -131,27 +122,36 @@ body {
 }
 
 /*КАРТА СЕТИ*/
+
 main {
     position: absolute;
     left: 100px;
     right: 100px;
-    background-color: #9f9f9f;
-    border: 5px solid rgb(71, 71, 71);
+    background-color: #c8c8c8;
+    z-index: -1;
 }
 
+/*Поле карты сети*/
 .network-map {
-    padding-top: 20px;
+    border: 5px solid red;
 }
 
+#viewport {
+    width: 100%;
+    z-index: 5;
+}
+
+/*Сервер-хаб*/
 .server-pic {
     display: flex;
     align-items: center;
     margin: auto;
-    width: 70px;
+    width: 100px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
+/*Коммутатор*/
 .switch-pic {
     display: flex;
     justify-content: center;
@@ -160,9 +160,31 @@ main {
     margin-top: 50px;
 }
 
+/*Устройство*/
 .device-pic {
     display: flex;
     justify-content: center;
     margin: auto;
     width: 70px;
+}
+
+
+.server {
+    position: relative;
+    cursor: pointer;
+}
+
+#contentContainer {
+    width: 100%;
+    height: 400px;
+    border: 1px black solid;
+    overflow: hidden;
+    background-color: rgba(72, 161, 76, 0);
+    cursor: pointer;
+}
+
+#thing {
+    position: relative;
+    width: 70px;
+    transition: left .5s ease-in, top .5s ease-in;
 }
