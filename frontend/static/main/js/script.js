@@ -1,5 +1,7 @@
 /*Добавление элементов при загрузке страницы*/
-$('document').ready(function () {
+
+$(document).ready(function () {
+
     $('.network-map').append('<img src="static/main/img/device_icon.svg" alt="Устройство" title="Устройство" class="device-pic">');
     $('.network-map').append('<img src="static/main/img/switch_icon.svg" alt="Комутатор" title="Комутатор" class="switch-pic">');
     $('.network-map').append('<img src="static/main/img/server_icon.svg" alt="Сервер" title="Сервер" class="server-pic">');
@@ -14,7 +16,7 @@ $('document').ready(function () {
                 //начальная инициализация
                 particleSystem = system;
                 particleSystem.screenSize(canvas.width, canvas.height);
-                particleSystem.screenPadding(80);
+                particleSystem.screenPadding(100);
                 that.initMouseHandling();
             },
 
@@ -38,12 +40,13 @@ $('document').ready(function () {
                         var w = 40;   //ширина квадрата
                         ctx.fillStyle = "orange"; //с его цветом понятно
                         ctx.fillRect(pt.x - w / 2, pt.y - w / 2, w, w); //рисуем
-                        //ctx.drawImage(SVGImageElement.href('img/switch_icon.svg'), pt.x - w / 2, pt.y - w / 2, w, w);
                         ctx.fillStyle = "black"; //цвет для шрифта
                         ctx.font = 'italic 13px sans-serif'; //шрифт
-                        ctx.fillText(node.name, pt.x + 8, pt.y + 8); //пишем имя у каждой точки
+                        ctx.fillText(node.name, pt.x + 0, pt.y + 0); //пишем имя у каждой точки
                     });
             },
+
+
 
             initMouseHandling: function () { //события с мышью
                 var dragged = null;   //вершина которую перемещают
@@ -106,6 +109,72 @@ $('document').ready(function () {
 
     })
 
+    //Поле с бегающим серваком
+    const theThing = document.querySelector("#thing");
+    const container = document.querySelector("#contentContainer");
+
+    container.addEventListener("click", getClickPosition, false);
+
+    var x = document.querySelector("#contentContainer");
+    var offsetX = x.offsetLeft;
+    var offsetY = x.offsetTop;
+    x.addEventListener('click', handleClick, false);
+
+    var coords = [];
+
+    function handleClick(e) {
+        mouseX = parseInt(e.clientX - offsetX);
+        mouseY = parseInt(e.clientY - offsetY);
+        coords.push([mouseX, mouseY]);
+        document.getElementById("results").innerHTML = "You have clicked at: " + JSON.stringify(coords);
+    }
+
+    function repeat() {
+        var a = coords.slice(0);
+        console.log(a)
+        var i = setInterval(function () {
+            relocate(...a.shift())
+            !a.length && clearInterval(i)
+        }, 1000)
+    }
+
+    function getClickPosition(e) {
+        let parentPosition = getPosition(e.currentTarget);
+        let xPosition = e.clientX - parentPosition.x - (theThing.clientWidth / 2);
+        let yPosition = e.clientY - parentPosition.y - (theThing.clientHeight / 2);
+        relocate(xPosition, yPosition);
+    }
+
+    function relocate(x, y) {
+        theThing.style.left = x + "px";
+        theThing.style.top = y + "px";
+    }
+
+    function getPosition(el) {
+        let xPos = 0;
+        let yPos = 0;
+
+        while (el) {
+            if (el.tagName == "BODY") {
+
+                let xScroll = el.scrollLeft || document.documentElement.scrollLeft;
+                let yScroll = el.scrollTop || document.documentElement.scrollTop;
+
+                xPos += (el.offsetLeft - xScroll + el.clientLeft);
+                yPos += (el.offsetTop - yScroll + el.clientTop);
+            } else {
+
+                xPos += (el.offsetLeft - el.scrollLeft + el.clientLeft);
+                yPos += (el.offsetTop - el.scrollTop + el.clientTop);
+            }
+
+            el = el.offsetParent;
+        }
+        return {
+            x: xPos,
+            y: yPos
+        };
+    }
 });
 
 /*Боковая панель*/
