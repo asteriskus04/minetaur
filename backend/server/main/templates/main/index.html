@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+
+    <!-- JS script -->
+    <script type="text/javascript" src="{% static 'main/js/jQuery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'main/js/arbor.js' %}"></script>
+    <script type="text/javascript" src="{% static 'main/js/script.js' %}"></script>
+
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="{% static 'main/img/minetour_logo.svg' %}">
+    <title>Mine'тавр</title>
+</head>
+
+<body>
+    <header>
+        <section class="logo">
+            <img src="{% static 'main/img/minetour_logo.svg' %}" alt="Логотип" class="logo__pic">
+            <h1 class="logo__name">Mine'тавр</h1>
+        </section>
+
+        <div id="toolsbar">
+            <div class="toogle-btn" onclick="openMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li>Панель управления</li>
+                <li><button>...</button></li>
+                <li><button>...</button></li>
+                <li><button>...</button></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="network-map">
+            <div id="contentContainer">
+                <img src="{% static 'main/img/server_icon.svg' %}" id="thing"><img>
+            </div>
+
+            <canvas id="viewport" width="1200" height="600"></canvas>
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
