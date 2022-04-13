@@ -23,7 +23,7 @@ for packet in capture.sniff_continuously(packet_count=100):
         pkt_info = packet.tcp.payload
         # hex to utf
 
-        hex_split = pkt_info.replace(':','')
+        hex_split = pkt_info.replace(':', '')
 
         mining = '6d696e696e67'
         if re.search(mining, hex_split, flags=0):
