@@ -3,6 +3,7 @@ from . import views
 
 urlpatterns = [
     path('', views.index),
-    path('testdb', views.testdb)
+    path('testdb', views.testdb),
+    path('infomining', views.min)
 
 ]

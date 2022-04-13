@@ -8,7 +8,7 @@ capture = pyshark.LiveCapture(interface=networkInterface, bpf_filter='tcp')
 
 print("listening on %s" % networkInterface)
 
-for packet in capture.sniff_continuously(packet_count=100):
+for packet in capture.sniff_continuously(packet_count=10):
     # adjusted output
     try:
         # get timestamp
@@ -26,8 +26,10 @@ for packet in capture.sniff_continuously(packet_count=100):
         hex_split = pkt_info.replace(':', '')
 
         mining = '6d696e696e67'
+        check_point = 0
         if re.search(mining, hex_split, flags=0):
             print('УРА')
+            check_point = 1
 
         # output packet info
         if len(pkt_info) > 5:
