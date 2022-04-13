@@ -28,7 +28,7 @@ $(document).ready(function () {
                 particleSystem.eachEdge( //отрисуем каждую грань
                     function (edge, pt1, pt2) { //будем работать с гранями и точками её начала и конца
                         ctx.strokeStyle = "rgba(10,10,10, .3)"; //грани будут чёрным цветом с некой прозрачностью
-                        ctx.lineWidth = 5; //толщиной в один пиксель
+                        ctx.lineWidth = 10; //толщиной в один пиксель
                         ctx.beginPath();  //начинаем рисовать
                         ctx.moveTo(pt1.x, pt1.y); //от точки один
                         ctx.lineTo(pt2.x, pt2.y); //до точки два
@@ -37,7 +37,7 @@ $(document).ready(function () {
 
                 particleSystem.eachNode( //теперь каждую вершину
                     function (node, pt) {  //получаем вершину и точку где она
-                        var w = 40;   //ширина квадрата
+                        var w = 50;   //ширина квадрата
                         ctx.fillStyle = "orange"; //с его цветом понятно
                         ctx.fillRect(pt.x - w / 2, pt.y - w / 2, w, w); //рисуем
                         ctx.fillStyle = "black"; //цвет для шрифта
