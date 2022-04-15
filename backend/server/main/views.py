@@ -14,6 +14,6 @@ def testdb(request):
 def min1(request):
     point, iphnik = scan()
     if point == 1:
-        return HttpResponse('Майнинг')
+        return HttpResponse('Майнинг' + iphnik)
     else:
         return HttpResponse('Всё тихо')

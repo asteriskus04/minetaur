@@ -1,74 +1,83 @@
 import pyshark
-import time
+import json
 import re
+
+data_json={}
+
+def gen_data(ip_points, check_point):
+    id = ''
+    status = ''
+    ip = ''
+    mac = ''
+    height = 0
+    fill = ''
+
+    pc = {
+        "id": "PC_1_1",
+        "status": check_point,
+        "ip": ip_points,
+        "mac": "28:E9:46:6C:58:EF",
+        "height": 60,
+        "fill": {
+            "src": "static/main/img/device_icon.png"
+        }
+    }
+    return pc
+
+def write_json(pc_data):
+    try:
+        data = json.load(open('persons.json'))
+    except:
+        data = []
+
+    data.append(pc_data)
+
+    with open('persons.json', 'w') as file:
+        json.dump(data, file, indent=2, ensure_ascii=False)
+
+
+
+
 
 
 def scan():
     global check_point
-    networkInterface = "4"
-    ip_points = 'IP: '
+    networkInterface = "5"
+    ip_points = ''
+    ip_points_1 = ''
+    check_point = 0
     # define capture object
     print("listening on %s" % networkInterface)
     capture = pyshark.LiveCapture(interface=networkInterface, bpf_filter='tcp')
     for packet in capture.sniff_continuously(packet_count=50):
         # adjusted output
         try:
-            # get timestamp
-            localtime = time.asctime(time.localtime(time.time()))
-
             # get packet content
-            protocol = packet.transport_layer  # protocol type
             src_addr = packet.ip.src  # source address
-            src_port = packet[protocol].srcport  # source port
             dst_addr = packet.ip.dst  # destination address
-            dst_port = packet[protocol].dstport  # destination port
             pkt_info = packet.tcp.payload
             # hex to utf
-
             hex_split = pkt_info.replace(':', '')
 
             # mining = '6d696e696e67'
             mining = '6d'
-            check_point = 0
+
             if re.search(mining, hex_split, flags=0):
-                print('УРА')
-                check_point = 1
-                ip_points += ' ', str(src_addr)
+                check_point = 'Майнинг'
+                ip_points += src_addr
+                #ip_points_1 += dst_addr
+
+
 
             # output packet info
             if len(pkt_info) > 5:
-                print("%s IP %s:%s <-> %s:%s (%s)     %s" % (
-                    localtime, src_addr, src_port, dst_addr, dst_port, protocol, hex_split))
-
-            ##pkt_info = bytes.fromhex(pkt_info)
-            ##print(pkt_info.decode('utf-8'))
-            """
-            dir(packet)  # for entire packet
-            dir(packet.ip)  # for ip layer
-            dir(packet.tcp)  # for tcp layer
-            print(packet.tcp)  # one way
-            packet.tcp.pretty_print()
-            """
+                print("IP %s <-> %s (%s)" % (
+                    src_addr, dst_addr, hex_split))
 
         except AttributeError as e:
             # ignore packets other than TCP, UDP and IPv4
             pass
+        write_json(gen_data(ip_points,check_point))
     return check_point, ip_points
 
 
-
-
-
-    """
-    
-    cap = pyshark.LiveCapture(interface='4', bpf_filter='tcp')
-    
-    cap.sniff(packet_count=10)
-    
-    
-    def print_dns_info(pkt):
-        print('DNS Request from %s: %s' % (pkt.ip.src, pkt.tcp.payload))
-    
-    
-    cap.apply_on_packets(print_dns_info, timeout=100)
-    """
