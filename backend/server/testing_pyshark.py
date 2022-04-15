@@ -3,10 +3,10 @@ import time
 import re
 
 
-
-def scan(check_point):
+def scan():
+    global check_point
     networkInterface = "4"
-
+    ip_points = 'IP: '
     # define capture object
     print("listening on %s" % networkInterface)
     capture = pyshark.LiveCapture(interface=networkInterface, bpf_filter='tcp')
@@ -27,11 +27,13 @@ def scan(check_point):
 
             hex_split = pkt_info.replace(':', '')
 
-            mining = '6d696e696e67'
+            # mining = '6d696e696e67'
+            mining = '6d'
             check_point = 0
             if re.search(mining, hex_split, flags=0):
                 print('УРА')
                 check_point = 1
+                ip_points += ' ', str(src_addr)
 
             # output packet info
             if len(pkt_info) > 5:
@@ -51,7 +53,10 @@ def scan(check_point):
         except AttributeError as e:
             # ignore packets other than TCP, UDP and IPv4
             pass
-    return check_point
+    return check_point, ip_points
+
+
+
 
 
     """
