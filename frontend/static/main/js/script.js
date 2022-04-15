@@ -5,7 +5,6 @@ function openMenu() {
 
 //Карта сети
 anychart.data.loadJsonFile('data.json', function (data) {
-
     // создание графа из загруженных данных
     var chart = anychart.graph(data);
 
@@ -25,7 +24,7 @@ anychart.data.loadJsonFile('data.json', function (data) {
     chart.interactivity().nodes(true);
 
     // запрет на зум
-    chart.interactivity().zoomOnMouseWheel(false);
+    chart.interactivity().zoomOnMouseWheel(true);
     // запрет на скролл по вертикали
     chart.interactivity().scrollOnMouseWheel(false);
 
@@ -41,9 +40,18 @@ anychart.data.loadJsonFile('data.json', function (data) {
     // подписи на рёбрах
     chart.edges().tooltip(false);
 
-    // configure the visual settings of edges
+    // настройка отображения рёбер
     chart.edges().normal().stroke("#364F6B", 2);
     chart.edges().hovered().stroke("#ffa000", 2, "10 5");
     chart.edges().selected().stroke("#ffa000", 4);
 
+
+    //настройка фона
+    chart.background().fill("#DBE2EF");
+    /*
+        chart.background().fill({
+            src: "https://static.anychart.com/images/underwater.jpg",
+            mode: "stretch"
+        });
+    */
 })
