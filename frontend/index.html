@@ -10,17 +10,21 @@
     <link rel="stylesheet" href="static/main/css/style.css">
 
     <!-- JS script -->
-    <script type="text/javascript" src="static/main/js/jQuery.js"></script>
-    <script type="text/javascript" src="static/main/js/arbor.js"></script>
-    <script type="text/javascript" src="static/main/js/script.js"></script>
+    <script type="text/javascript" src='static/main/js/jQuery.js'></script>
 
-    <!-- Шрифты -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap" rel="stylesheet">
+    <script src="static/main/js/anychart-core.min.js"></script>
+    <script src="static/main/js/anychart-graph.min.js"></script>
+    <script src="static/main/js/anychart-data-adapter.min.js"></script>
+
+    <script type="text/javascript" src='static/main/js/script.js'></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href='https://fonts.googleapis.com'>
+    <link rel="preconnect" href='https://fonts.gstatic.com' crossorigin>
+    <link href='https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap' rel="stylesheet">
 
     <link rel="shortcut icon" href="static/main/img/minetour_logo.svg">
-    <title>Mine'тавр</title>
+    <title>Mine'тавр - Сетевой анализатор трафика</title>
 </head>
 
 <body>
@@ -29,7 +33,6 @@
             <img src="static/main/img/minetour_logo.svg" alt="Логотип" class="logo__pic">
             <h1 class="logo__name">Mine'тавр</h1>
         </section>
-
         <div id="toolsbar">
             <div class="toogle-btn" onclick="openMenu()">
                 <span></span>
@@ -46,19 +49,12 @@
     </header>
 
     <main>
-        <section class="network-map">
-            <div id="contentContainer">
-                <img src='static/main/img/server_icon.svg' id="thing"><img>
-            </div>
-
-            <canvas id="viewport" width="1200" height="600"></canvas>
-        </section>
-
+        <div id="network-map"></div>
     </main>
 
     <footer>
-
     </footer>
+
 </body>
 
 </html>
