@@ -52,6 +52,8 @@ def scan(check_point):
             # ignore packets other than TCP, UDP and IPv4
             pass
     return check_point
+
+
     """
     
     cap = pyshark.LiveCapture(interface='4', bpf_filter='tcp')
