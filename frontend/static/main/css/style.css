@@ -11,18 +11,42 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #141526;
+    background-size: cover;
+}
+
 header {
     width: 100%;
     display: flex;
     justify-content: center;
     padding: 10px 0 15px;
-    background: #49a7ff;
+    background: #6e73d7;
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
 }
 
-body {
-    background: url(/static/main/img/bg.jpg);
-    background-size: cover;
+#load {
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    background-color: #141526;
+}
+
+#load p {
+    color: white;
+    text-align: center;
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+#load img {
+    position: fixed;
+    top: 40%;
+    left: 38%;
+    width: 350px;
 }
 
 /*Логотип*/
@@ -43,95 +67,252 @@ body {
     font-size: 30px;
 }
 
-/* ПАНЕЛЬ УПРАВЛЕНИЯ */
-#toolsbar {
-    z-index: 1;
+.logo_2 {
+    width: 70px;
+    margin: 0;
     position: fixed;
-    top: 10;
-    width: 300px;
-    height: 100%;
-    background: #30629871;
-    left: -304px;
-    border-radius: 10px;
-    border: 4px solid #e0e5ea;
-    transition: all 500ms;
-}
-
-/*Появление панели управления*/
-#toolsbar.active {
-    left: 10px;
-}
-
-/*Название панели управления*/
-#toolsbar ul li:first-child {
-    text-align: center;
-    color: white;
-    font-size: 1.5em;
-    list-style: none;
-    padding: 10px;
-}
-
-/*Элементы панели управления*/
-#toolsbar ul li:not(:first-child) {
-    font-size: 1.1em;
-    list-style: none;
-    padding: 10px;
-    text-align: center;
-}
-
-/*Кнопки*/
-#toolsbar ul li button {
-    border: none;
-    border-radius: 5px;
-    background: #4676D7;
-    color: #fff;
-    padding: 8px 16px;
-    font-size: 16px;
-    min-width: 200px;
-}
-
-/*Цвет элементов при наведении*/
-#toolsbar ul li button:hover {
-    border: 1px solid white;
-}
-
-#toolsbar .toogle-btn {
-    position: absolute;
-    left: 305px;
-    margin-top: 10px;
-    background: #e0e5ea;
-    padding: 10px;
-    border-radius: 12px;
+    right: 10px;
+    top: 0;
     cursor: pointer;
 }
 
-#toolsbar .toogle-btn:hover {
-    background: #76a1ce;
-}
-
-#toolsbar .toogle-btn:hover span {
-    background: #fafafa;
-}
-
-#toolsbar .toogle-btn span {
+.about {
+    position: absolute;
+    z-index: 1;
     display: block;
-    width: 25px;
-    height: 4px;
-    background-color: #666;
-    margin: 4px;
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.925);
 }
 
+.about h2 {
+    display: block;
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+
+    text-align: center;
+    margin-top: 100px;
+}
+
+.about p {
+    color: white;
+    font-size: 20px;
+
+    text-align: center;
+    margin-top: 50px;
+    padding: 0px;
+}
+
+.about .comand-list {
+    margin-top: 30px;
+    margin-bottom: 100px;
+    color: rgb(205, 149, 255);
+}
+
+
+.about button {
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 0 1rem;
+
+    position: absolute;
+    left: 47%;
+}
+
+.about button:hover {
+    background-color: rgb(175, 84, 255);
+    color: #fff;
+    cursor: pointer;
+}
+
+.help_btn {
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    background-color: #141526;
+    color: #ffffff;
+
+    height: 50px;
+
+    font-size: large;
+    font-weight: 700;
+
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 0 1rem;
+
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.help_btn:hover {
+    background: rgb(175, 84, 255);
+    cursor: pointer;
+}
 
 /*КАРТА СЕТИ*/
 main {
+    display: block;
     position: absolute;
-    left: 80px;
-    right: 80px;
+    left: 10%;
+    right: 10%;
     top: 100px;
-    bottom: 10px;
+    bottom: 5%;
     z-index: -1;
 }
 
 #network-map {
     height: 100%;
+}
+
+.refr {
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    z-index: 1;
+}
+
+.exp {
+    position: absolute;
+    top: 15%;
+    right: 3%;
+    z-index: 1;
+}
+
+main button {
+    background-color: #3D84A8;
+    color: #000000;
+
+    height: 50px;
+
+    font-size: large;
+    font-weight: 700;
+
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 0 1rem;
+
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+main button:hover {
+    background-color: #141526;
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+    cursor: pointer;
+}
+
+/*БАНЕР*/
+.help {
+    position: absolute;
+    display: block;
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.925);
+    z-index: 1;
+}
+
+.help h2 {
+    display: block;
+    color: white;
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+}
+
+.help p {
+    display: block;
+    color: white;
+    margin-top: 20px;
+    font-weight: 200;
+    font-size: 20px;
+    text-align: center;
+}
+
+.zoom {
+    position: absolute;
+    display: block;
+    width: 21%;
+    margin: 3% 10%;
+}
+
+.zoom img {
+    width: 100%;
+}
+
+.zoom .zoom_text {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 1px;
+}
+
+.motion {
+    position: absolute;
+    display: block;
+    width: 21%;
+    margin: 3% 39%;
+}
+
+.motion img {
+    width: 100%;
+}
+
+.motion .motion_text {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.node-motion {
+    position: absolute;
+    display: block;
+    width: 21%;
+    margin: 3% 68%;
+}
+
+.node-motion img {
+    width: 100%;
+}
+
+.node-motion .node-motion_text {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.help button {
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    bottom: 10%;
+    left: 43%;
+    border-radius: 10px;
+
+    font-size: large;
+    font-weight: 700;
+
+    border: 1px solid white;
+    padding: 0 1rem;
+}
+
+.help button:hover {
+    background-color: rgb(175, 84, 255);
+    color: #fff;
+    cursor: pointer;
 }
