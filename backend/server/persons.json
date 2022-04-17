@@ -1,0 +1,835 @@
+[
+  {
+    "id": "PC_1_1",
+    "status": "Майнинг",
+    "ip": "13.107.42.16",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "Server",
+    "height": 70,
+    "fill": {
+      "src": "static/main/img/server_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_1",
+    "status": "Майнинг",
+    "ip": "173.194.222.103",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_1",
+    "status": "Майнинг",
+    "ip": "192.168.43.161",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_1",
+    "status": "Майнинг",
+    "ip": "192.168.43.161",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_1",
+    "status": "Майнинг",
+    "ip": "74.125.205.99",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_1",
+    "status": "Майнинг",
+    "ip": "192.168.43.161",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_1",
+    "status": "Майнинг",
+    "ip": "74.125.205.99",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_1",
+    "status": "Майнинг",
+    "ip": "74.125.205.99",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_1",
+    "status": "Майнинг",
+    "ip": "74.125.205.99",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_1",
+    "status": "Майнинг",
+    "ip": "74.125.205.99",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_1",
+    "status": "Майнинг",
+    "ip": "192.168.43.161",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_1",
+    "status": "Майнинг",
+    "ip": "192.168.43.161",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_1",
+    "status": "Майнинг",
+    "ip": "95.217.106.87",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_1",
+    "status": "Майнинг",
+    "ip": "95.217.106.87",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "Server",
+    "height": 70,
+    "fill": {
+      "src": "static/main/img/server_icon.png"
+    }
+  },
+  {
+    "id": "Server",
+    "height": 70,
+    "fill": {
+      "src": "static/main/img/server_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_1",
+    "status": "Майнинг",
+    "ip": "104.88.19.189",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_1",
+    "status": "Майнинг",
+    "ip": "192.168.90.126",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_1",
+    "status": "Майнинг",
+    "ip": "74.125.131.103",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_1",
+    "status": "Майнинг",
+    "ip": "74.125.131.103",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_1",
+    "status": "Майнинг",
+    "ip": "74.125.131.103",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_1",
+    "status": "Майнинг",
+    "ip": "74.125.131.103",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "Server",
+    "height": 70,
+    "fill": {
+      "src": "static/main/img/server_icon.png"
+    }
+  },
+  {
+    "id": "Server",
+    "height": 70,
+    "fill": {
+      "src": "static/main/img/server_icon.png"
+    }
+  },
+  {
+    "id": "Server",
+    "height": 70,
+    "fill": {
+      "src": "static/main/img/server_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_2",
+    "status": "Майнинг",
+    "ip": "192.168.90.126",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_3",
+    "status": "Майнинг",
+    "ip": "74.125.131.138",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_4",
+    "status": "Майнинг",
+    "ip": "192.168.90.126",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_5",
+    "status": "Майнинг",
+    "ip": "192.168.90.126",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_6",
+    "status": "Майнинг",
+    "ip": "192.168.90.126",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_7",
+    "status": "Майнинг",
+    "ip": "192.168.90.126",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_8",
+    "status": "Майнинг",
+    "ip": "192.168.90.126",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_9",
+    "status": "Майнинг",
+    "ip": "192.168.90.126",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_10",
+    "status": "Майнинг",
+    "ip": "192.168.90.126",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_11",
+    "status": "Майнинг",
+    "ip": "192.168.90.126",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_12",
+    "status": "Майнинг",
+    "ip": "192.168.90.126",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_13",
+    "status": "Майнинг",
+    "ip": "192.168.90.126",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_14",
+    "status": "Майнинг",
+    "ip": "192.168.90.126",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_15",
+    "status": "Майнинг",
+    "ip": "192.168.90.126",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_16",
+    "status": "Майнинг",
+    "ip": "192.168.90.126",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_17",
+    "status": "Майнинг",
+    "ip": "74.125.131.138",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_18",
+    "status": "Майнинг",
+    "ip": "192.168.90.126",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_19",
+    "status": "Майнинг",
+    "ip": "74.125.131.138",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_20",
+    "status": "Майнинг",
+    "ip": "74.125.131.138",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_21",
+    "status": "Майнинг",
+    "ip": "74.125.131.138",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_22",
+    "status": "Майнинг",
+    "ip": "192.168.90.126",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_23",
+    "status": "Майнинг",
+    "ip": "192.168.90.126",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_24",
+    "status": "Майнинг",
+    "ip": "95.216.240.133",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_25",
+    "status": "Майнинг",
+    "ip": "95.216.240.133",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_26",
+    "status": "Майнинг",
+    "ip": "95.216.240.133",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "Server",
+    "height": 70,
+    "fill": {
+      "src": "static/main/img/server_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_2",
+    "status": "Майнинг",
+    "ip": "216.239.32.116",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_3",
+    "status": "Майнинг",
+    "ip": "192.168.90.126",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_4",
+    "status": "Майнинг",
+    "ip": "192.168.90.126",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_5",
+    "status": "Майнинг",
+    "ip": "74.125.131.104",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_6",
+    "status": "Майнинг",
+    "ip": "74.125.131.104",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_7",
+    "status": "Майнинг",
+    "ip": "74.125.131.104",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_8",
+    "status": "Майнинг",
+    "ip": "74.125.131.104",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_9",
+    "status": "Майнинг",
+    "ip": "192.168.90.126",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "Server",
+    "height": 70,
+    "fill": {
+      "src": "static/main/img/server_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_2",
+    "status": "Майнинг",
+    "ip": "192.168.90.126",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_3",
+    "status": "Майнинг",
+    "ip": "192.168.90.126",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_4",
+    "status": "Майнинг",
+    "ip": "192.168.90.126",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_5",
+    "status": "Майнинг",
+    "ip": "52.178.17.2",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_6",
+    "status": "Майнинг",
+    "ip": "52.178.17.2",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "Server",
+    "height": 70,
+    "fill": {
+      "src": "static/main/img/server_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_2",
+    "status": "Майнинг",
+    "ip": "192.168.90.126",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_3",
+    "status": "Майнинг",
+    "ip": "74.125.131.101",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_4",
+    "status": "Майнинг",
+    "ip": "74.125.131.101",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_5",
+    "status": "Майнинг",
+    "ip": "74.125.131.101",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_6",
+    "status": "Майнинг",
+    "ip": "74.125.131.101",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_7",
+    "status": "Майнинг",
+    "ip": "192.168.90.126",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_8",
+    "status": "Майнинг",
+    "ip": "142.251.1.104",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_9",
+    "status": "Майнинг",
+    "ip": "192.168.90.126",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_10",
+    "status": "Майнинг",
+    "ip": "192.168.90.126",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_11",
+    "status": "Майнинг",
+    "ip": "192.168.90.126",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_12",
+    "status": "Майнинг",
+    "ip": "142.251.1.104",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_13",
+    "status": "Майнинг",
+    "ip": "142.251.1.104",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_14",
+    "status": "Майнинг",
+    "ip": "142.251.1.104",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_15",
+    "status": "Майнинг",
+    "ip": "192.168.90.126",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_16",
+    "status": "Майнинг",
+    "ip": "192.168.90.126",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_17",
+    "status": "Майнинг",
+    "ip": "192.168.90.126",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_18",
+    "status": "Майнинг",
+    "ip": "192.168.90.126",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_19",
+    "status": "Майнинг",
+    "ip": "192.168.90.126",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_20",
+    "status": "Майнинг",
+    "ip": "52.178.17.2",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_icon.png"
+    }
+  }
+]

@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from testing_pyshark import check_point
+from testing_pyshark import scan
+
 
 def index(request):
     return render(request, 'main/index.html')
@@ -9,9 +10,10 @@ def index(request):
 def testdb(request):
     return HttpResponse('dffsgwrg')
 
-def min(request):
-    if check_point == 1:
-        return HttpResponse('Майнинг')
+
+def min1(request):
+    point, iphnik = scan()
+    if point == 1:
+        return HttpResponse('Майнинг' + iphnik)
     else:
         return HttpResponse('Всё тихо')
-
