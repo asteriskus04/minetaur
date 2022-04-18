@@ -1,6 +1,7 @@
 import pyshark
 import json
 import re
+import os
 
 data_json = {}
 server = {
@@ -15,15 +16,13 @@ server = {
 
 
 
-def gen_data(ip_points, check_point, pcnum):
+def pc_data(ip_points, check_point, pcnum):
     id = ''
     status = ''
     ip = ''
     mac = ''
     height = 0
     fill = ''
-
-
     pc = {
         "id": "PC_1_" + str(pcnum),
         "status": check_point,
@@ -31,51 +30,65 @@ def gen_data(ip_points, check_point, pcnum):
         "mac": "28:E9:46:6C:58:EF",
         "height": 60,
         "fill": {
-            "src": "static/main/img/device_icon.png"
+            "src": "static/main/img/device_suspect_icon.png"
         }
     }
-    return pc
+    edg = {
+        "from": "Server",
+        "to": "PC_1_" + str(pcnum),
+    }
+    write_nodes_edges(pc, edg)
 
 
-def write_json(pc_data):
+def write_nodes_edges(pc_data, edg):
     try:
-        data = json.load(open('persons.json'))
+        nodes = json.load(open('main/static/main/js/nodes.json'))
+        edges = json.load(open('main/static/main/js/edges.json'))
     except:
-        data = []
+        nodes = []
+        edges = []
 
-    data.append(pc_data)
+    nodes.append(pc_data)
+    edges.append(edg)
 
-    with open('persons.json', 'w') as file:
-        json.dump(data, file, indent=2, ensure_ascii=False)
+    with open('main/static/main/js/nodes.json', 'w') as file:
+        json.dump(nodes, file, indent=2, ensure_ascii=False)
+    with open('main/static/main/js/edges.json', 'w') as file:
+        json.dump(edges, file, indent=2, ensure_ascii=False)
 
-def write_nodes():
-    with open('data.json', 'w') as outfile:
-        json.dump([], outfile)
-    nodes = {}
-    edges = {}
+
+def write_itog():
+
     try:
-        data = json.load(open('persons.json'))
+        nodes = json.load(open('main/static/main/js/nodes.json'))
+        edges = json.load(open('main/static/main/js/edges.json'))
     except:
-        data = []
+        nodes = []
+        edges = []
 
     itog = {
-        'nodes': data,
-        'edges': data
+        'nodes': nodes,
+        'edges': edges
     }
-    with open('data.json', 'w') as file:
+    with open('main/static/main/js/data1.json', 'w') as file:
         json.dump(itog, file, indent=4, ensure_ascii=False)
 
-write_json(server)
+    
+
+
+
 def scan():
     global check_point
     networkInterface = "5"
-    pcnum = 1
+    pcnum = 0
     ip_points = ''
     ip_points_1 = ''
     check_point = 0
     # define capture object
     print("listening on %s" % networkInterface)
     capture = pyshark.LiveCapture(interface=networkInterface, bpf_filter='tcp')
+    with open('main/static/main/js/nodes.json', 'w') as file:
+        json.dump(server, file, indent=4, ensure_ascii=False)
     for packet in capture.sniff_continuously(packet_count=50):
         # adjusted output
         try:
@@ -91,8 +104,8 @@ def scan():
 
             if re.search(mining, hex_split, flags=0):
                 pcnum += 1
-                check_point = 'Майнинг'
-                write_json(gen_data(src_addr, check_point, pcnum))
+                check_point = 'Возможен майнинг!'
+                pc_data(src_addr, check_point, pcnum)
                 # ip_points_1 += dst_addr
 
             # output packet info
@@ -103,5 +116,5 @@ def scan():
         except AttributeError as e:
             # ignore packets other than TCP, UDP and IPv4
             pass
-        write_nodes()
+        write_itog()
     return check_point, ip_points

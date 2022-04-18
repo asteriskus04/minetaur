@@ -1,0 +1,43 @@
+{
+    "nodes": {
+        "id": "Server",
+        "height": 70,
+        "fill": {
+            "src": "static/main/img/server_icon.png"
+        }
+    },
+    "edges": [
+        {
+            "from": "Server",
+            "to": "PC_1_1"
+        },
+        {
+            "from": "Server",
+            "to": "PC_1_2"
+        },
+        {
+            "from": "Server",
+            "to": "PC_1_3"
+        },
+        {
+            "from": "Server",
+            "to": "PC_1_4"
+        },
+        {
+            "from": "Server",
+            "to": "PC_1_5"
+        },
+        {
+            "from": "Server",
+            "to": "PC_1_6"
+        },
+        {
+            "from": "Server",
+            "to": "PC_1_7"
+        },
+        {
+            "from": "Server",
+            "to": "PC_1_8"
+        }
+    ]
+}

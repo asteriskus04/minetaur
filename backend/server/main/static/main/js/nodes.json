@@ -1,0 +1,7 @@
+{
+    "id": "Server",
+    "height": 70,
+    "fill": {
+        "src": "static/main/img/server_icon.png"
+    }
+}
