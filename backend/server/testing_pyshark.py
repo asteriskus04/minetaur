@@ -51,8 +51,8 @@ def write_nodes_edges(pc_data, edg):
     nodes.append(pc_data)
     edges.append(edg)
 
-    with open('main/static/main/js/nodes.json', 'w') as file:
-        json.dump(nodes, file, indent=2, ensure_ascii=False)
+    with open('main/static/main/js/nodes.json', 'w') as outfile:
+        json.dump(nodes, outfile, indent=2, ensure_ascii=False)
     with open('main/static/main/js/edges.json', 'w') as file:
         json.dump(edges, file, indent=2, ensure_ascii=False)
 
@@ -65,7 +65,7 @@ def write_itog():
     except:
         nodes = []
         edges = []
-
+    nodes.append(server)
     itog = {
         'nodes': nodes,
         'edges': edges
@@ -73,7 +73,7 @@ def write_itog():
     with open('main/static/main/js/data1.json', 'w') as file:
         json.dump(itog, file, indent=4, ensure_ascii=False)
 
-    
+
 
 
 
@@ -87,8 +87,6 @@ def scan():
     # define capture object
     print("listening on %s" % networkInterface)
     capture = pyshark.LiveCapture(interface=networkInterface, bpf_filter='tcp')
-    with open('main/static/main/js/nodes.json', 'w') as file:
-        json.dump(server, file, indent=4, ensure_ascii=False)
     for packet in capture.sniff_continuously(packet_count=50):
         # adjusted output
         try:
