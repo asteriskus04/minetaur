@@ -17,12 +17,6 @@ server = {
 
 
 def pc_data(ip_points, check_point, pcnum):
-    id = ''
-    status = ''
-    ip = ''
-    mac = ''
-    height = 0
-    fill = ''
     pc = {
         "id": "PC_1_" + str(pcnum),
         "status": check_point,
@@ -79,7 +73,7 @@ def write_itog():
 
 def scan():
     global check_point
-    networkInterface = "5"
+    networkInterface = "4"
     pcnum = 0
     ip_points = ''
     ip_points_1 = ''
