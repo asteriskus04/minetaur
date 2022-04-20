@@ -1,0 +1,772 @@
+[
+  {
+    "id": "PC_1_1",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_2",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_3",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_4",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_5",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_6",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_7",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_8",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_9",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_10",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_11",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_12",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_13",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_14",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_15",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_16",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_17",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_18",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_19",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_20",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_21",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_22",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_23",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_24",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_25",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_26",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_27",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_28",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_29",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_30",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_31",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_32",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_33",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_34",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_35",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_36",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_37",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_38",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_39",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_40",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_41",
+    "status": "Возможен майнинг!",
+    "ip": "213.180.204.158",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_1",
+    "status": "Возможен майнинг!",
+    "ip": "192.168.43.177",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_2",
+    "status": "Возможен майнинг!",
+    "ip": "192.168.43.177",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_3",
+    "status": "Возможен майнинг!",
+    "ip": "5.255.255.50",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_4",
+    "status": "Возможен майнинг!",
+    "ip": "192.168.43.177",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_5",
+    "status": "Возможен майнинг!",
+    "ip": "178.154.131.217",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_6",
+    "status": "Возможен майнинг!",
+    "ip": "178.154.131.217",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_7",
+    "status": "Возможен майнинг!",
+    "ip": "178.154.131.217",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_8",
+    "status": "Возможен майнинг!",
+    "ip": "178.154.131.217",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_9",
+    "status": "Возможен майнинг!",
+    "ip": "178.154.131.217",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_10",
+    "status": "Возможен майнинг!",
+    "ip": "178.154.131.217",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_11",
+    "status": "Возможен майнинг!",
+    "ip": "5.255.255.50",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_12",
+    "status": "Возможен майнинг!",
+    "ip": "5.255.255.50",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_13",
+    "status": "Возможен майнинг!",
+    "ip": "5.255.255.50",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_14",
+    "status": "Возможен майнинг!",
+    "ip": "5.255.255.50",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_15",
+    "status": "Возможен майнинг!",
+    "ip": "5.255.255.50",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_16",
+    "status": "Возможен майнинг!",
+    "ip": "5.255.255.50",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_17",
+    "status": "Возможен майнинг!",
+    "ip": "5.255.255.50",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_18",
+    "status": "Возможен майнинг!",
+    "ip": "5.255.255.50",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_19",
+    "status": "Возможен майнинг!",
+    "ip": "5.255.255.50",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_20",
+    "status": "Возможен майнинг!",
+    "ip": "5.255.255.50",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_21",
+    "status": "Возможен майнинг!",
+    "ip": "5.255.255.50",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_22",
+    "status": "Возможен майнинг!",
+    "ip": "5.255.255.50",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_1",
+    "status": "Возможен майнинг!",
+    "ip": "192.168.43.177",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_2",
+    "status": "Возможен майнинг!",
+    "ip": "87.250.250.91",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_3",
+    "status": "Возможен майнинг!",
+    "ip": "192.168.43.177",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_4",
+    "status": "Возможен майнинг!",
+    "ip": "5.255.255.50",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_5",
+    "status": "Возможен майнинг!",
+    "ip": "192.168.43.177",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_6",
+    "status": "Возможен майнинг!",
+    "ip": "5.255.255.50",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_7",
+    "status": "Возможен майнинг!",
+    "ip": "192.168.43.177",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_8",
+    "status": "Возможен майнинг!",
+    "ip": "192.168.43.177",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_9",
+    "status": "Возможен майнинг!",
+    "ip": "192.168.43.177",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_10",
+    "status": "Возможен майнинг!",
+    "ip": "77.88.21.119",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_11",
+    "status": "Возможен майнинг!",
+    "ip": "192.168.43.177",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_12",
+    "status": "Возможен майнинг!",
+    "ip": "192.168.43.177",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_13",
+    "status": "Возможен майнинг!",
+    "ip": "192.168.43.177",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  },
+  {
+    "id": "PC_1_14",
+    "status": "Возможен майнинг!",
+    "ip": "192.168.43.177",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_suspect_icon.png"
+    }
+  }
+]

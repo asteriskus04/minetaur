@@ -28,7 +28,7 @@ function exp() {
 var keys = [];
 
 //Карта сети
-anychart.data.loadJsonFile('static/main/js/data.json', function (data) {
+anychart.data.loadJsonFile('static/main/js/data1.json', function (data) {
     // создание графа из загруженных данных
     var chart = anychart.graph(data);
 
@@ -85,7 +85,7 @@ function refr() {
     $('#network-map').remove();
     $('main').append('<div id="network-map">');
 
-    anychart.data.loadJsonFile('static/main/js/data.json', function (data) {
+    anychart.data.loadJsonFile('static/main/js/data1.json', function (data) {
         // создание графа из загруженных данных
         var chart = anychart.graph(data);
 
