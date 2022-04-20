@@ -27,26 +27,27 @@ header {
 
 #load {
     position: absolute;
-    z-index: 1;
     top: 0%;
     bottom: 0%;
     right: 0%;
     left: 0%;
     background-color: #141526;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
 }
 
 #load p {
     color: white;
     text-align: center;
-    margin-top: 20%;
-    font-size: 30px;
+    margin-top: 10px;
+    font-size: 26px;
 }
 
 #load img {
-    position: fixed;
-    top: 40%;
-    left: 38%;
-    width: 350px;
+    width: 200px;
 }
 
 /*Логотип*/
@@ -78,8 +79,8 @@ header {
 
 .about {
     position: absolute;
-    z-index: 1;
     display: block;
+    z-index: 1;
     top: 0%;
     bottom: 0%;
     right: 0%;
@@ -93,7 +94,6 @@ header {
     color: white;
     font-weight: 700;
     font-size: 30px;
-
     text-align: center;
     margin-top: 100px;
 }
@@ -123,10 +123,11 @@ header {
 
     border-radius: 10px;
     border: 1px solid white;
-    padding: 0 1rem;
 
+    transform: translate(-50%, -50%);
     position: absolute;
-    left: 47%;
+    bottom: 30%;
+    left: 50%;
 }
 
 .about button:hover {
@@ -188,8 +189,41 @@ main {
     z-index: 1;
 }
 
+.hello_btn {
+    background-color: #6e73d7;
+    color: #000000;
+    border: 2px solid rgb(255, 255, 255);
+
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+}
+
+.hello h2 {
+    display: block;
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+
+}
+
+.hello p {
+    display: block;
+    position: absolute;
+    top: 15%;
+    left: 0%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
 main button {
-    background-color: #3D84A8;
+    background-color: #CADEFC;
     color: #000000;
 
     height: 50px;
@@ -245,7 +279,7 @@ main button:hover {
 .zoom {
     position: absolute;
     display: block;
-    width: 21%;
+    width: 20%;
     margin: 3% 10%;
 }
 
@@ -263,7 +297,7 @@ main button:hover {
 .motion {
     position: absolute;
     display: block;
-    width: 21%;
+    width: 20%;
     margin: 3% 39%;
 }
 
@@ -281,7 +315,7 @@ main button:hover {
 .node-motion {
     position: absolute;
     display: block;
-    width: 21%;
+    width: 20%;
     margin: 3% 68%;
 }
 
@@ -299,9 +333,6 @@ main button:hover {
 .help button {
     height: 50px;
     line-height: 50px;
-    position: absolute;
-    bottom: 10%;
-    left: 43%;
     border-radius: 10px;
 
     font-size: large;
@@ -309,6 +340,11 @@ main button:hover {
 
     border: 1px solid white;
     padding: 0 1rem;
+
+    transform: translate(-50%, -50%);
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
 }
 
 .help button:hover {
