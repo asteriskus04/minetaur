@@ -15,3 +15,4 @@ def testdb(request):
 
 def min1(request):
     return HttpResponse('Страница для проверки функций')
+
