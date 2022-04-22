@@ -5,7 +5,7 @@ import re
 
 def arp_search():
     os.system('arp -a > arp.csv')
-    data = pandas.read_csv('main/arp.csv', encoding='cp866')
+    data = pandas.read_csv('arp.csv', encoding='cp866')
     data_prom = data.values.tolist()
     data_result = []
     for i in data_prom:
@@ -13,3 +13,4 @@ def arp_search():
             data_result += re.findall(r'[0-9]+(?:\.[0-9]+){3}', *i)
 
     return (data_result)
+print(arp_search())

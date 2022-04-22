@@ -1,26 +1,22 @@
 import pyshark
 import json
 import re
-from arp import arp_search
+import arp
 
-server = {
 
-    "id": "Server",
-    "height": 70,
-    "fill": {
-        "src": "static/main/img/server_icon.png"
-    }
-}
 
-listarp = arp_search()
-print(listarp)
-print(len(listarp))
+
+
 
 
 def pc_data(ip_points, check_point, pcnum, src):
+    if check_point == 1:
+        status = 'Обнаружен майнер -_-'
+    else:
+        status = 'Пока что всё тихо, но будь осторожен'
     pc = {
         "id": "PC_1_" + str(pcnum),
-        "status": str(check_point),
+        "status": str(status),
         "ip": str(ip_points),
         "mac": "28:E9:46:6C:58:EF",
         "height": 60,
@@ -32,7 +28,6 @@ def pc_data(ip_points, check_point, pcnum, src):
         "from": "Server",
         "to": "PC_1_" + str(pcnum),
     }
-
     write_nodes_edges(pc, edg)
 
 
@@ -53,10 +48,10 @@ def write_nodes_edges(pc_data, edg):
         json.dump(edges, file, indent=2, ensure_ascii=False)
 
 
-def write_itog():
+def write_itog(server):
     try:
-        nodes = json.load(open('main/static/main/js/nodes.json'))
-        edges = json.load(open('main/static/main/js/edges.json'))
+        nodes = json.load(open('main/static/main/js/nodes.json', encoding='utf-8'))
+        edges = json.load(open('main/static/main/js/edges.json', encoding='utf-8'))
     except:
         nodes = []
         edges = []
@@ -70,14 +65,14 @@ def write_itog():
 
 
 def scan():
-    sh = 0
+    listarp = arp.arp_search()
     f = open('main/static/main/js/data1.json', 'w', encoding='utf-8')
     f.close()
     f = open('main/static/main/js/nodes.json', 'w', encoding='utf-8')
     f.close()
     f = open('main/static/main/js/edges.json', 'w', encoding='utf-8')
     f.close()
-    networkInterface = "5"
+    networkInterface = "4"
     pcnum = 0
     # define capture object
     print("listening on %s" % networkInterface)
@@ -86,7 +81,6 @@ def scan():
         # adjusted output
         try:
             # get packet content
-            sh += 1
             src_addr = packet.ip.src  # source address
             dst_addr = packet.ip.dst  # destination address
             pkt_info = packet.tcp.payload
@@ -95,41 +89,32 @@ def scan():
             mining = '17'
 
             for i in range(len(listarp)):
+                print(listarp[i], src_addr)
                 if listarp[i] == src_addr or listarp[i] == dst_addr:
                     if re.search(mining, hex_split, flags=0):
                         pcnum += 1
-                        check_point = 'Обнаружен майнинг!'
+                        check_point = 1
                         src = 'infected_'
+                        pc_data(listarp[i], check_point, pcnum, src)
                         listarp[i] = 0
-                        pc_data(str(listarp[i]), check_point, pcnum, src)
-                    elif sh == 40:
-                        pcnum += 1
-                        check_point = 'Всё тихо!'
-                        src = ''
-                        pc_data(str(listarp[i]), check_point, pcnum, src)
-                        listarp[i] = 0
-            if len(pkt_info) > 5:
-                print("IP %s <-> %s" % (
-                    src_addr, dst_addr))
+                    if len(pkt_info) > 5:
+                        print("IP %s <-> %s ====== %s" % (
+                            src_addr, dst_addr, listarp[i]))
         except AttributeError as e:
             # ignore packets other than TCP, UDP and IPv4
             pass
-    write_itog()
-
-
-"""
-            if re.search(mining, hex_split, flags=0):
-                pcnum += 1
-                check_point = 'Возможен майнинг!'
-                pc_data(src_addr, check_point, pcnum)
-                # ip_points_1 += dst_addr
-
-            # output packet info
-            if len(pkt_info) > 5:
-                print("IP %s <-> %s" % (
-                    src_addr, dst_addr))
-
-        except AttributeError as e:
-            # ignore packets other than TCP, UDP and IPv4
-            pass
-"""
+    for i in range(len(listarp)):
+        if listarp[i] != 0:
+            pcnum += 1
+            check_point = 0
+            src = ''
+            pc_data(listarp[i], check_point, pcnum, src)
+            listarp[i] = 0
+    server = {
+        "id": "Server",
+        "height": 70,
+        "fill": {
+            "src": "static/main/img/server_icon.png"
+        }
+    }
+    write_itog(server)
