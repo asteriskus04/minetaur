@@ -13,7 +13,6 @@
 
 body {
     background-color: #141526;
-    background-size: cover;
 }
 
 header {
@@ -23,30 +22,32 @@ header {
     padding: 10px 0 15px;
     background: #6e73d7;
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
+    z-index: 3;
 }
 
 #load {
     position: absolute;
-    z-index: 1;
     top: 0%;
     bottom: 0%;
     right: 0%;
     left: 0%;
     background-color: #141526;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
 }
 
 #load p {
     color: white;
     text-align: center;
-    margin-top: 20%;
-    font-size: 30px;
+    margin-top: 10px;
+    font-size: 26px;
 }
 
 #load img {
-    position: fixed;
-    top: 40%;
-    left: 38%;
-    width: 350px;
+    width: 200px;
 }
 
 /*Логотип*/
@@ -78,8 +79,8 @@ header {
 
 .about {
     position: absolute;
-    z-index: 1;
     display: block;
+    z-index: 1;
     top: 0%;
     bottom: 0%;
     right: 0%;
@@ -93,7 +94,6 @@ header {
     color: white;
     font-weight: 700;
     font-size: 30px;
-
     text-align: center;
     margin-top: 100px;
 }
@@ -123,10 +123,11 @@ header {
 
     border-radius: 10px;
     border: 1px solid white;
-    padding: 0 1rem;
 
+    transform: translate(-50%, -50%);
     position: absolute;
-    left: 47%;
+    bottom: 30%;
+    left: 50%;
 }
 
 .about button:hover {
@@ -163,15 +164,36 @@ header {
 main {
     display: block;
     position: absolute;
-    left: 10%;
-    right: 10%;
-    top: 100px;
-    bottom: 5%;
+    left: 5%;
+    right: 5%;
+    top: 105px;
+    bottom: 0%;
     z-index: -1;
 }
 
 #network-map {
+    position: absolute;
+    left: 0;
+    right: 0;
     height: 100%;
+    width: 100%;
+}
+
+#network-table {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: #a6b1e1;
+}
+
+#network-table h2 {
+    display: block;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 3%;
 }
 
 .refr {
@@ -179,17 +201,64 @@ main {
     top: 5%;
     right: 3%;
     z-index: 1;
+    width: 180px;
 }
 
 .exp {
     position: absolute;
     top: 15%;
-    right: 3%;
+    left: 3%;
+    z-index: 1;
+    width: 180px;
+}
+
+.change {
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    z-index: 1;
+    width: 180px;
+}
+
+.hello {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     z-index: 1;
 }
 
+.hello h2 {
+    display: block;
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.hello p {
+    display: block;
+    color: white;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.hello_btn {
+    background-color: #6e73d7;
+    color: #000000;
+    border: 2px solid rgb(255, 255, 255);
+
+    transform: translate(-50%, -50%);
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+}
+
 main button {
-    background-color: #3D84A8;
+    background-color: #CADEFC;
     color: #000000;
 
     height: 50px;
@@ -233,42 +302,51 @@ main button:hover {
     text-align: center;
 }
 
+.help_text {
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
 .help p {
     display: block;
     color: white;
-    margin-top: 20px;
     font-weight: 200;
     font-size: 20px;
-    text-align: center;
 }
 
 .zoom {
     position: absolute;
     display: block;
-    width: 21%;
-    margin: 3% 10%;
+    width: 20%;
+    margin: 35px 10%;
 }
 
 .zoom img {
     width: 100%;
+    border: 5px solid white;
+    border-radius: 10px;
 }
 
 .zoom .zoom_text {
     color: white;
     text-align: center;
     font-size: 14px;
-    margin-top: 1px;
+    margin-top: 10px;
 }
 
 .motion {
     position: absolute;
     display: block;
-    width: 21%;
-    margin: 3% 39%;
+    width: 20%;
+    margin: 35px 39%;
 }
 
 .motion img {
     width: 100%;
+    border: 5px solid white;
+    border-radius: 10px;
 }
 
 .motion .motion_text {
@@ -281,12 +359,14 @@ main button:hover {
 .node-motion {
     position: absolute;
     display: block;
-    width: 21%;
-    margin: 3% 68%;
+    width: 20%;
+    margin: 35px 68%;
 }
 
 .node-motion img {
     width: 100%;
+    border: 5px solid white;
+    border-radius: 10px;
 }
 
 .node-motion .node-motion_text {
@@ -299,9 +379,6 @@ main button:hover {
 .help button {
     height: 50px;
     line-height: 50px;
-    position: absolute;
-    bottom: 10%;
-    left: 43%;
     border-radius: 10px;
 
     font-size: large;
@@ -309,6 +386,11 @@ main button:hover {
 
     border: 1px solid white;
     padding: 0 1rem;
+
+    transform: translate(-50%, -50%);
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
 }
 
 .help button:hover {
