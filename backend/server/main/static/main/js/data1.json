@@ -2,12 +2,12 @@
     "nodes": [
         {
             "id": "PC_1_1",
-            "status": "Р’СЃС‘ С‚РёС…Рѕ!",
-            "ip": "192.168.90.126",
+            "status": "РћР±РЅР°СЂСѓР¶РµРЅ РјР°Р№РЅРёРЅРі!",
+            "ip": "0",
             "mac": "28:E9:46:6C:58:EF",
             "height": 60,
             "fill": {
-                "src": "static/main/img/device_icon.png"
+                "src": "static/main/img/device_infected_icon.png"
             }
         },
         {
