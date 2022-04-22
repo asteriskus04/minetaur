@@ -1,0 +1,12 @@
+[
+  {
+    "id": "PC_1_1",
+    "status": "Обнаружен майнинг!",
+    "ip": "0",
+    "mac": "28:E9:46:6C:58:EF",
+    "height": 60,
+    "fill": {
+      "src": "static/main/img/device_infected_icon.png"
+    }
+  }
+]

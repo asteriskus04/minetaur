@@ -1,0 +1,27 @@
+{
+    "nodes": [
+        {
+            "id": "PC_1_1",
+            "status": "РћР±РЅР°СЂСѓР¶РµРЅ РјР°Р№РЅРёРЅРі!",
+            "ip": "0",
+            "mac": "28:E9:46:6C:58:EF",
+            "height": 60,
+            "fill": {
+                "src": "static/main/img/device_infected_icon.png"
+            }
+        },
+        {
+            "id": "Server",
+            "height": 70,
+            "fill": {
+                "src": "static/main/img/server_icon.png"
+            }
+        }
+    ],
+    "edges": [
+        {
+            "from": "Server",
+            "to": "PC_1_1"
+        }
+    ]
+}
