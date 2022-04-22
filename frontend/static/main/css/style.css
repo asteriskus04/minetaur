@@ -13,7 +13,6 @@
 
 body {
     background-color: #141526;
-    background-size: cover;
 }
 
 header {
@@ -23,6 +22,7 @@ header {
     padding: 10px 0 15px;
     background: #6e73d7;
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
+    z-index: 3;
 }
 
 #load {
@@ -164,15 +164,36 @@ header {
 main {
     display: block;
     position: absolute;
-    left: 10%;
-    right: 10%;
-    top: 100px;
-    bottom: 5%;
+    left: 5%;
+    right: 5%;
+    top: 105px;
+    bottom: 0%;
     z-index: -1;
 }
 
 #network-map {
+    position: absolute;
+    left: 0;
+    right: 0;
     height: 100%;
+    width: 100%;
+}
+
+#network-table {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: #a6b1e1;
+}
+
+#network-table h2 {
+    display: block;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 3%;
 }
 
 .refr {
@@ -180,13 +201,48 @@ main {
     top: 5%;
     right: 3%;
     z-index: 1;
+    width: 180px;
 }
 
 .exp {
     position: absolute;
     top: 15%;
-    right: 3%;
+    left: 3%;
     z-index: 1;
+    width: 180px;
+}
+
+.change {
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    z-index: 1;
+    width: 180px;
+}
+
+.hello {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.hello h2 {
+    display: block;
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.hello p {
+    display: block;
+    color: white;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .hello_btn {
@@ -194,32 +250,10 @@ main {
     color: #000000;
     border: 2px solid rgb(255, 255, 255);
 
-    z-index: 1;
     transform: translate(-50%, -50%);
     position: absolute;
     bottom: 10%;
     left: 50%;
-}
-
-.hello h2 {
-    display: block;
-    position: absolute;
-    top: 5%;
-    left: 0%;
-    color: white;
-    font-size: 40px;
-    font-weight: 700;
-
-}
-
-.hello p {
-    display: block;
-    position: absolute;
-    top: 15%;
-    left: 0%;
-    color: white;
-    font-size: 20px;
-    font-weight: 400;
 }
 
 main button {
@@ -267,42 +301,51 @@ main button:hover {
     text-align: center;
 }
 
+.help_text {
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
 .help p {
     display: block;
     color: white;
-    margin-top: 20px;
     font-weight: 200;
     font-size: 20px;
-    text-align: center;
 }
 
 .zoom {
     position: absolute;
     display: block;
     width: 20%;
-    margin: 3% 10%;
+    margin: 35px 10%;
 }
 
 .zoom img {
     width: 100%;
+    border: 5px solid white;
+    border-radius: 10px;
 }
 
 .zoom .zoom_text {
     color: white;
     text-align: center;
     font-size: 14px;
-    margin-top: 1px;
+    margin-top: 10px;
 }
 
 .motion {
     position: absolute;
     display: block;
     width: 20%;
-    margin: 3% 39%;
+    margin: 35px 39%;
 }
 
 .motion img {
     width: 100%;
+    border: 5px solid white;
+    border-radius: 10px;
 }
 
 .motion .motion_text {
@@ -316,11 +359,13 @@ main button:hover {
     position: absolute;
     display: block;
     width: 20%;
-    margin: 3% 68%;
+    margin: 35px 68%;
 }
 
 .node-motion img {
     width: 100%;
+    border: 5px solid white;
+    border-radius: 10px;
 }
 
 .node-motion .node-motion_text {
@@ -343,7 +388,7 @@ main button:hover {
 
     transform: translate(-50%, -50%);
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
     left: 50%;
 }
 
