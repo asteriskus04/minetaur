@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -7,33 +8,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="static/main/css/style.css">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
 
     <!-- JS script -->
-    <script type="text/javascript" src='static/main/js/jQuery.js'></script>
+    <script type="text/javascript" src="{% static 'main/js/jQuery.js' %}"></script>
 
-    <script type="text/javascript" src="static/main/js/anychart-core.min.js"></script>
-    <script type="text/javascript" src="static/main/js/anychart-graph.min.js"></script>
-    <script type="text/javascript" src="static/main/js/anychart-data-adapter.min.js"></script>
+    <script type="text/javascript" src="{% static 'main/js/anychart-core.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'main/js/anychart-graph.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'main/js/anychart-data-adapter.min.js' %}"></script>
 
-    <script type="text/javascript" src='static/main/js/script.js'></script>
+    <script type="text/javascript" src="{% static 'main/js/script.js' %}"></script>
 
     <!-- Fonts -->
     <link rel="preconnect" href='https://fonts.googleapis.com'>
     <link rel="preconnect" href='https://fonts.gstatic.com' crossorigin>
     <link href='https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap' rel="stylesheet">
 
-    <link rel="shortcut icon" href="static/main/img/minetour_logo.svg">
+    <link rel="shortcut icon" href="{% static 'main/img/minetour_logo.svg' %}">
     <title>Mine'тавр - Сетевой анализатор трафика</title>
 </head>
 
 <body>
     <header>
         <section class="logo">
-            <img src="static/main/img/minetour_logo.svg" alt="Логотип программы" class="logo__pic">
+            <img src="{% static 'main/img/minetour_logo.svg' %}" alt="Логотип программы" class="logo__pic">
             <h1 class="logo__name">Mine'тавр</h1>
         </section>
         <img src="static/main/img/logotip_Gecko.svg" alt="Логотип команды" class="logo_2" onclick="show_about();">
+
+        <section id="load">
+            <img src="static/main/img/load.gif" alt="Анимация загрузки" class="load_anm">
+            <p>Загрузка сайта...</p>
+        </section>
+
         <section class="about">
             <h2>О команде - Gecko</h2>
             <p>Данный продукт разработан молодой и успешной командой разработчиков:</p>
@@ -51,18 +58,13 @@
 
         <section class="help">
             <h2>Добро пожаловать в Mine'тавр!</h2>
-            <p class="help_text">Mine'тавр - программа, разработанная с целью помочь сетевому администратору в
-                обнаружении
+            <p>Mine'тавр - программа, разработанная с целью помочь сетевому администратору в обнаружении
                 несанционированного использования вычислительных мощностей оконечных устройств в локальной
-                сети.
-                <br><br>
-                Майнинг - это деятельность по созданию новых структур для обеспечения
-                функционирования
+                сети.<br>Майнинг - это деятельность по созданию новых структур для обеспечения функционирования
                 криптовалютных
                 платформ. За создание очередной структурной единицы обычно предусмотрено вознаграждение за счёт новых
                 единиц криптовалюты и/или комиссионных сборов. Обычно майнинг сводится к серии вычислений с перебором
-                параметров для нахождения хеша с заданными свойствами.
-            </p>
+                параметров для нахождения хеша с заданными свойствами.</p>
             <div class="zoom">
                 <img src="static/main/img/zoom_anm.gif" alt="Анимация зума">
                 <p class="zoom_text">Используйте колёсико мыши для изменения масштаба карты</p>
@@ -82,29 +84,9 @@
     </header>
 
     <main>
-        <section class="hello">
-            <h2>Добро пожаловать в Mine'тавр!</h2>
-            <p>
-                Mine'тавр - это Web-приложение по выявлению инцидентов несанкционированного использования вычислительных
-                мощностей c помощью нейронной сети при анализе ключевых элементов инфраструктуры распределенных
-                компьютерных сетей.
-                <br><br>
-                Система «Mine'тавр» рекомендована к использованию в случаях, при проверке компьютерных сетей и их
-                элементов на предмет использования вычислительных мощностей для добычи криптовалюты.
-                <br><br>
-                Нейронная сеть позволяет на основе атрибутов, полученных из трафика, оценить риск несанкционированного
-                использования вычислительных мощностей компьютерных сетей и с высокой точностью обнаружить заражённое
-                устройство!
-                <br><br>
-                Для начала использования приложения нажмите кнопку "Построить карту сети"!
-            </p>
-            <input type="button" id="hello_btnw" value="Построить карту сети">
-            <button class="hello_btn" onclick="mkmp();">Построить карту сети</button>
-        </section>
         <div id="network-map"></div>
-        <div id="network-table">
-            <h2>Табличный вид</h2>
-        </div>
+        <button class="refr" onclick="refr();">Обновить карту</button>
+        <button class="exp" onclick="exp();">Экспорт в файл</button>
     </main>
 
     <footer>

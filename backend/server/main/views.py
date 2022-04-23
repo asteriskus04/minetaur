@@ -7,7 +7,6 @@ from testing_pyshark import scan
 
 
 def index(request):
-    scan()
     return render(request, 'main/index.html')
 
 

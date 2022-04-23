@@ -2,12 +2,12 @@
     "nodes": [
         {
             "id": "PC_1_1",
-            "status": "Обнаружен майнер -_-",
-            "ip": "192.168.43.177",
+            "status": "Пока что всё тихо, но будь осторожен",
+            "ip": "192.168.90.241",
             "mac": "28:E9:46:6C:58:EF",
             "height": 60,
             "fill": {
-                "src": "static/main/img/device_infected_icon.png"
+                "src": "static/main/img/device_icon.png"
             }
         },
         {
