@@ -257,6 +257,19 @@ main {
     left: 50%;
 }
 
+#hello_btnw {
+    background-color: #d76e6e;
+    height: 50px;
+    width: 200px;
+    color: #000000;
+    border: 2px solid rgb(255, 255, 255);
+
+    transform: translate(-50%, -50%);
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+}
+
 main button {
     background-color: #CADEFC;
     color: #000000;

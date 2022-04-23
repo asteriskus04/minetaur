@@ -2,6 +2,19 @@ $('document').ready(function () {
     $('.help').hide();
     $('.about').hide();
     $('#network-table').hide();
+
+    $("#hello_btnw").click(function () {
+        $.ajax({
+            method: "GET",
+            url: "type your python script path here",
+            data: { "place": value },
+            dataType: "text",
+            success: function (result) {
+                var data = JSON.parse(result);
+                console.log(result);
+            }
+        });
+    });
 })
 
 function hide() {
@@ -17,6 +30,8 @@ function hide_about() {
 function show_about() {
     $('.about').fadeIn();
 }
+
+
 
 var keys = [];
 function getmap() {
