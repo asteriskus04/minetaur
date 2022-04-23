@@ -11,7 +11,7 @@ def hex_to_rgb(value):
 
 x_train = []
 nameNumber = 0
-f = open('test.txt', 'r')
+f = open('test2.txt', 'r')
 while True:
     hex_split = f.readline()
     if not hex_split:
@@ -55,7 +55,7 @@ while True:
             s = 0
     x_train.append(res)
     x = np.expand_dims(res, axis=0)
-f = open('test2.txt', 'r')
+f = open('test3.txt', 'r')
 while True:
     hex_split = f.readline()
     if not hex_split:
@@ -80,11 +80,11 @@ while True:
 x_train = np.array(x_train)
 y_train = []
 
-for i in range(0, 59):
+for i in range(0, 114):
     y_train.append(0)
-for i in range(59, 115):
+for i in range(114, 443):
     y_train.append(1)
-for i in range(115, x_train.shape[0]):
+for i in range(443, x_train.shape[0]):
     y_train.append(0)
 y_train = np.array(y_train)
 print(x_train.shape)
@@ -111,7 +111,7 @@ model.compile(optimizer='adam',
 
 his = model.fit(x_train, y_train_cat, batch_size=32, epochs=5, validation_split=0.2)
 
-x = x_train[80]
+x = x_train[400]
 x = np.expand_dims(x, axis=0)
 
 res = model.predict(x)

@@ -86,7 +86,7 @@ def scan():
             pkt_info = packet.tcp.payload
             hex_split = pkt_info.replace(':', '')
             # mining = '6d696e696e67'
-            mining = '17'
+            mining = '17:'
 
             for i in range(len(listarp)):
                 print(listarp[i], src_addr)
