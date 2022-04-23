@@ -99,7 +99,8 @@
                 <br><br>
                 Для начала использования приложения нажмите кнопку "Построить карту сети"!
             </p>
-            <button class="hello_btn" onclick="mkmp();">Построить карту сети</button>
+            {% csrf_token %}
+            <input type="button" id="hello_btn" value="Построить карту сети" >
         </section>
         <div id="network-map"></div>
         <div id="network-table">

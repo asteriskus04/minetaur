@@ -135,6 +135,33 @@ header {
     color: #fff;
     cursor: pointer;
 }
+#hello_btn {
+    background-color: #6e73d7;
+
+    transform: translate(-50%, -50%);
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+
+    background-color: #6e73d7;
+    color: #000000;
+
+    height: 50px;
+
+    font-size: large;
+    font-weight: 700;
+
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 0 1rem;
+
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+#hello_btn:hover{
+    background: rgb(175, 84, 255);
+    cursor: pointer;
+}
 
 .help_btn {
     position: absolute;
@@ -246,16 +273,6 @@ main {
     text-align: left;
 }
 
-.hello_btn {
-    background-color: #6e73d7;
-    color: #000000;
-    border: 2px solid rgb(255, 255, 255);
-
-    transform: translate(-50%, -50%);
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-}
 
 main button {
     background-color: #CADEFC;

@@ -2,6 +2,27 @@ $('document').ready(function () {
     $('.help').hide();
     $('.about').hide();
     $('#network-table').hide();
+
+    $("#hello_btn").click(function () {
+    $('main').append('<section id="load"><img src="static/main/img/load.gif" alt="Анимация загрузки" class="load_anm"><p>Загрузка карты...</p></section>');
+        $.ajax({
+
+            method: "GET",
+            url: "api/getmap",
+
+            success: function (result) {
+
+                $("#load").slideUp(300);
+                $('.hello').remove();
+                $('main').append('<button class="refr" onclick="refr();">Обновить карту</button>');
+                $('main').append('<a href="data.json" download><button class="exp" onclick="exp();">Экспорт в файл</button></a>');
+                $('main').append('<button class="change" onclick="change();">Сменить вид</button>');
+                graph();
+                console.log(result);
+            }
+        });
+
+    });
 })
 
 function hide() {
