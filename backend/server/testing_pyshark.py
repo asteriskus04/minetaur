@@ -2,7 +2,7 @@ import pyshark
 import json
 import re
 import arp
-
+from arp import arp_search
 
 
 
@@ -11,12 +11,12 @@ import arp
 
 def pc_data(ip_points, check_point, pcnum, src):
     if check_point == 1:
-        status = 'Обнаружен майнер -_-'
+        status = 'Obnarugen mining -_-'
     else:
-        status = 'Пока что всё тихо, но будь осторожен'
+        status = 'use tiho bro'
     pc = {
         "id": "PC_1_" + str(pcnum),
-        "status": str(status),
+        "status": status,
         "ip": str(ip_points),
         "mac": "28:E9:46:6C:58:EF",
         "height": 60,
@@ -65,7 +65,8 @@ def write_itog(server):
 
 
 def scan():
-    listarp = arp.arp_search()
+    listarp = arp_search()
+    print(listarp)
     f = open('main/static/main/js/data1.json', 'w', encoding='utf-8')
     f.close()
     f = open('main/static/main/js/nodes.json', 'w', encoding='utf-8')
@@ -77,7 +78,7 @@ def scan():
     # define capture object
     print("listening on %s" % networkInterface)
     capture = pyshark.LiveCapture(interface=networkInterface, bpf_filter='tcp')
-    for packet in capture.sniff_continuously(packet_count=50):
+    for packet in capture.sniff_continuously(packet_count=10):
         # adjusted output
         try:
             # get packet content
@@ -87,6 +88,7 @@ def scan():
             hex_split = pkt_info.replace(':', '')
             # mining = '6d696e696e67'
             mining = '17'
+
 
             for i in range(len(listarp)):
                 print(listarp[i], src_addr)
