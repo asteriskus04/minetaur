@@ -3,8 +3,30 @@ import json
 import re
 import arp
 from arp import arp_search
+import numpy as np
+from keras.models import model_from_json
 
+def hex_to_rgb(value):
+    value = value.lstrip('#')
+    lv = len(value)
+    return list(int(value[i:i + lv // 3], 16) for i in range(0, lv, lv // 3))
 
+def RGB(hex_split):
+    res = np.zeros((30, 30, 3)).astype(int)
+    s = 0
+    k = 0
+    for i in range(0, len(hex_split) - 6, 6):
+        a = hex_split[i:i + 6]
+        RGB = hex_to_rgb(a)
+        r = RGB[0]
+        g = RGB[1]
+        b = RGB[2]
+        res[k, s] = [r, g, b]
+        s += 1
+        if s == 30:
+            k += 1
+            s = 0
+    return res
 
 
 
@@ -94,17 +116,40 @@ def scan():
             pkt_info = packet.tcp.payload
             hex_split = pkt_info.replace(':', '')
             # mining = '6d696e696e67'
-            mining = '1'
+
             for i in range(len(listarp)):
                 print("IP Отправки: %s <-> IP Назначения:%s ====== IP Из АРП:%s" % (src_addr, dst_addr, listarp[i]))
                 if listarp[i] == src_addr or listarp[i] == dst_addr:
-                    if re.search(mining, hex_split, flags=0):
-                        pcnum += 1
-                        check_point = 1
-                        src = 'infected_'
-                        pc_data(listarp[i], check_point, pcnum, src)
-                        listarp[i] = 0
+                    if len(hex_split) > 5:
+                        if len(hex_split) < 5400:
+                            for n in range(len(hex_split) + 1, 5400 + 1):
+                                hex_split += "0"
+                        x_train = []
+                        x_train.append(RGB(hex_split))
+                        x_train = np.array(x_train)
+                        x_train = np.expand_dims(x_train, axis=0)
+                        x_train = x_train / 255
+
+                        jfile = open("model.json", "r")
+                        loaded_json = jfile.read()
+                        jfile.close()
+                        loaded_model = model_from_json(loaded_json)
+
+                        loaded_model.load_weights("weights.hdf5")
+
+                        loaded_model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+                        check_point = loaded_model.predict(x_train[0])
+                        check_point = np.argmax(check_point)
+
+                        if check_point == 1:
+                            print('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
+                            print(hex_split)
+                            pcnum += 1
+                            src = 'infected_'
+                            pc_data(listarp[i], check_point, pcnum, src)
+                            listarp[i] = 0
                     #if len(pkt_info) > 5:
+
 
             check_point = 0
         except AttributeError as e:
