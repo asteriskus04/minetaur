@@ -107,7 +107,7 @@ def scan():
     # define capture object
     print("listening on %s" % networkInterface)
     capture = pyshark.LiveCapture(interface=networkInterface, bpf_filter='tcp')
-    for packet in capture.sniff_continuously(packet_count=200):
+    for packet in capture.sniff_continuously(packet_count=300):
         # adjusted output
         try:
             # get packet content
