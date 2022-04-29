@@ -16,7 +16,6 @@ $('document').ready(function () {
                 $('.hello').remove();
                 $('main').append('<button class="refr" onclick="refr();">Обновить карту</button>');
                 $('main').append('<a href="data.json" download><button class="exp" onclick="exp();">Экспорт в файл</button></a>');
-                $('main').append('<button class="change" onclick="change();">Сменить вид</button>');
                 graph();
                 console.log(result);
             }

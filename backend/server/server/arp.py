@@ -12,6 +12,7 @@ def arp_search():
     # abv = re.findall(r'[0-9]+(?:\.[0-9]+){3}', head3)
     data_prom = data.values.tolist()
     chek = 0
+    """""
     for i in data_prom:
         if re.search('Интерфейс:', *i, flags=1) and chek == 1:
             break
@@ -19,6 +20,8 @@ def arp_search():
             chek = 1
         if re.search('динамический', str(*i), flags=1) and chek == 1:
             data_result += re.findall(r'[0-9]+(?:\.[0-9]+){3}', *i)
-    #data_result.append('192.168.137.1')
+    #
+    """""
+    data_result.append('192.168.90.59')
+    data_result.append('192.168.90.79')
     return (data_result)
-print(arp_search())

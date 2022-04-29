@@ -33,9 +33,9 @@ def RGB(hex_split):
 
 def pc_data(ip_points, check_point, pcnum, src):
     if check_point == 1:
-        status = 'tobi pizda'
+        status = 'Опасность'
     else:
-        status = 'poka namana'
+        status = 'Все хорошо'
     pc = {
         "id": "PC_1_" + str(pcnum),
         "status": status,
@@ -102,12 +102,12 @@ def scan():
     f.close()
     f = open('main/static/main/js/edges.json', 'w', encoding='utf-8')
     f.close()
-    networkInterface = "9"
+    networkInterface = "5"
     pcnum = 0
     # define capture object
     print("listening on %s" % networkInterface)
     capture = pyshark.LiveCapture(interface=networkInterface, bpf_filter='tcp')
-    for packet in capture.sniff_continuously(packet_count=300):
+    for packet in capture.sniff_continuously(packet_count=100):
         # adjusted output
         try:
             # get packet content

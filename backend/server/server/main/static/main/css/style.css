@@ -233,14 +233,6 @@ main {
 
 .exp {
     position: absolute;
-    top: 15%;
-    left: 3%;
-    z-index: 1;
-    width: 180px;
-}
-
-.change {
-    position: absolute;
     top: 5%;
     left: 3%;
     z-index: 1;
